@@ -42,7 +42,7 @@ BEGIN
 
     //PRODUIT SCALAIRE
     scalaire := prodScalaire(pong.obj.vecteur,v);//test de la fonction prodScalaire. pong.obj.vecteur : (3,1) et v : (9,3)
-    writeln('Soit pong.obj.vecteur(x1,y1) et v(x2,y2) on a pong.obj.vecteur.v = x1y1 + x2y2, donc pong.obj.vecteur.v = ', scalaire);
+    writeln('Soit pong.obj.vecteur(x1,y1) et v(x2,y2) on a pong.obj.vecteur.v = x1x2 + y1y2, donc pong.obj.vecteur.v = ', scalaire);
 
     //PRODUIT VECTORIEL
     w := prodVectoriel(pong.obj.vecteur,v);//test de la fonction prodVectoriel. pong.obj.vecteur : (3,1) et v : (9,3)
