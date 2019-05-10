@@ -45,8 +45,8 @@ BEGIN
     writeln('Soit pong.obj.vecteur(x1,y1) et v(x2,y2) on a pong.obj.vecteur.v = x1y1 + x2y2, donc pong.obj.vecteur.v = ', scalaire);
 
     //PRODUIT VECTORIEL
-    scalaire := prodVectoriel(pong.obj.vecteur,v);//test de la fonction prodVectoriel. pong.obj.vecteur : (3,1) et v : (9,3)
-    writeln('Soit pong.obj.vecteur(x1,y1) et v(x2,y2) on a pong.obj.vecteur*v = x1y2 - x2y1, donc pong.obj.vecteur*v =  ', scalaire);
+    w := prodVectoriel(pong.obj.vecteur,v);//test de la fonction prodVectoriel. pong.obj.vecteur : (3,1) et v : (9,3)
+    writeln('Soit pong.obj.vecteur(x1,y1) et v(x2,y2) on a pong.obj.vecteur*v=(y1-y2,x2-x1) , donc w.posx = ', w.posx , ' et w.posy = ' , w.posy);
 
 readln;
 END.

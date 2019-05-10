@@ -15,7 +15,7 @@ function additionVect (vecteur1, vecteur2 : Vect2D) : Vect2D; // addition de deu
 function soustractionVect (vecteur1, vecteur2 : Vect2D) : Vect2D; //soustraction de deux vecteurs
 function mult1VectScal (scalaire : integer; vecteur : Vect2D) : Vect2D; //multiplication d'un vecteur par un scalaire
 function prodScalaire (vecteur1,vecteur2 : Vect2D) : integer; //produit scalaire
-function prodVectoriel (vecteur1,vecteur2 : Vect2D) : integer; //produit vectoriel
+function prodVectoriel (vecteur1,vecteur2 : Vect2D) : Vect2D; //produit vectoriel
 
 implementation
 
@@ -62,9 +62,10 @@ begin
 	prodScalaire := vecteur1.posx*vecteur2.posx + vecteur1.posy*vecteur2.posy;
 end;
 
-function prodVectoriel (vecteur1,vecteur2 : Vect2D) : integer;
+function prodVectoriel (vecteur1,vecteur2 : Vect2D) : Vect2D;
 begin
-	prodVectoriel := vecteur1.posx*vecteur2.posy - vecteur2.posx*vecteur1.posy
+	prodVectoriel.posx := vecteur1.posy-vecteur2.posy;
+	prodVectoriel.posy := vecteur2.posx-vecteur1.posx;
 end;
 
 
